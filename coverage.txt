@@ -1,0 +1,41 @@
+........................................................................ [ 52%]
+..................................................................       [100%]
+=============================== warnings summary ===============================
+main.py:890
+  /root/MRZ-Scanner-for-VG-Scalable/main.py:890: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("startup")
+
+venv/lib/python3.10/site-packages/fastapi/applications.py:4598
+venv/lib/python3.10/site-packages/fastapi/applications.py:4598
+  /root/MRZ-Scanner-for-VG-Scalable/venv/lib/python3.10/site-packages/fastapi/applications.py:4598: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    return self.router.on_event(event_type)  # ty: ignore[deprecated]
+
+main.py:911
+  /root/MRZ-Scanner-for-VG-Scalable/main.py:911: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("shutdown")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.10.12-final-0 _______________
+
+Name      Stmts   Miss  Cover   Missing
+---------------------------------------
+main.py     509    216    58%   103-110, 152-156, 175-176, 181, 197-201, 204-257, 269-275, 306-323, 468-491, 518-529, 555-586, 640, 811, 816, 834-855, 893-904, 914-915, 932-967, 1015-1039, 1065-1095, 1112-1142
+---------------------------------------
+TOTAL       509    216    58%
+138 passed, 4 warnings in 0.47s
